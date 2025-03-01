@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fai.study</groupId>
-    <artifactId>sales-management</artifactId>
+    <artifactId>online-course</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>sales-management</name>
     <packaging>war</packaging>
