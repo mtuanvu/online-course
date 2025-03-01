@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <jsp:include page="includes/header.jsp"/>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+
+<br>
+<jsp:include page="includes/footer.jsp"/>
 </body>
 </html>
