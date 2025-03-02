@@ -1,5 +1,7 @@
 <%@ page import="com.fai.study.salesmanagement.entities.User" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.util.List" %>
+<%@ page import="java.net.URLDecoder" %>
+<%@ page import="java.nio.charset.StandardCharsets" %><%--
   Created by IntelliJ IDEA.
   User: ADMIN
   Date: 02/03/2025
@@ -7,6 +9,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+  String error = request.getParameter("error");
+  if (error != null) {
+    error = URLDecoder.decode(error, StandardCharsets.UTF_8);
+%>
+<p style="color: red;"><%= error %></p>
+<%
+  }
+%>
 <html>
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -39,8 +50,13 @@
       <td><%= user.getUsername() %></td>
       <td><%= user.getEmail() %></td>
       <td>
-        <a href="<%= request.getContextPath() %>/views/users/editUser.jsp?id=<%= user.getId() %>" class="btn btn-warning btn-sm">Sửa</a>
-        <a href="<%= request.getContextPath() %>/deleteUser?id=<%= user.getId() %>" class="btn btn-danger btn-sm">Xóa</a>
+        <a href="<%= request.getContextPath() %>/users?action=edit&id=<%= user.getId() %>" class="btn btn-warning btn-sm">Sửa</a>
+        <form action="<%= request.getContextPath() %>/users" method="post" style="display:inline;">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" name="id" value="<%= user.getId() %>">
+          <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</button>
+        </form>
+
       </td>
     </tr>
     <%
