@@ -1,4 +1,4 @@
-<%@ page import="com.fai.study.salesmanagement.entities.User" %><%--
+<%@ page import="com.fai.study.onlinecourse.entities.User" %><%--
   Created by IntelliJ IDEA.
   User: ADMIN
   Date: 02/03/2025

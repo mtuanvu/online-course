@@ -1,4 +1,4 @@
-package com.fai.study.salesmanagement.entities;
+package com.fai.study.onlinecourse.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

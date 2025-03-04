@@ -1,6 +1,6 @@
-package com.fai.study.salesmanagement.controllers;
+package com.fai.study.onlinecourse.controllers;
 
-import com.fai.study.salesmanagement.entities.User;
+import com.fai.study.onlinecourse.entities.User;
 import jakarta.persistence.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

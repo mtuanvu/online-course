@@ -1,4 +1,4 @@
-<%@ page import="com.fai.study.salesmanagement.entities.User" %>
+<%@ page import="com.fai.study.onlinecourse.entities.User" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.net.URLDecoder" %>
 <%@ page import="java.nio.charset.StandardCharsets" %><%--

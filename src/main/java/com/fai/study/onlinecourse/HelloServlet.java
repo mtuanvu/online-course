@@ -1,4 +1,4 @@
-package com.fai.study.salesmanagement;
+package com.fai.study.onlinecourse;
 
 import java.io.*;
 

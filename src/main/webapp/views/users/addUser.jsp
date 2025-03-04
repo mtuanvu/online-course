@@ -10,6 +10,7 @@
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <jsp:include page="../../includes/header.jsp"/>
 </head>
 <body>
 <div class="container mt-5">
@@ -31,5 +32,8 @@
     <a href="<%= request.getContextPath() %>/users" class="btn btn-secondary">Hủy</a>
   </form>
 </div>
+
+<br>
+<jsp:include page="../../includes/footer.jsp"/>
 </body>
 </html>
